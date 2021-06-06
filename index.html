@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>张景天的毕业设计答辩</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" />
+    <!-- 我的定制 -->
+    <link rel="stylesheet" href="plugin/seu/themes.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="my-overlay"></div>
+      <div class="slides">
+        <div class="main-seu">
+          <img src="./plugin/seu/mainSEU.svg" alt="SEU" />
+          <div id="sub-title"></div>
+        </div>
+        <section data-background-image="./plugin/seu/background.png">
+          <h1>集成语法转换和自动化MOCK的接口平台</h1>
+          <span>--71117435 张景天</span>
+        </section>
+        <section>
+          <section
+            data-background-image="./plugin/seu/background.png"
+            data-subtitle="目录大纲"
+          >
+            <div
+              style="
+                margin: 20px 150px;
+                display: flex;
+                justify-content: space-between;
+              "
+            >
+              <img src="./plugin/seu/articlepage.png" alt="" width="360" />
+              <div style="margin-top: 40px">
+                <div>绪论</div>
+                <div>技术选型介绍</div>
+                <div>页面展示</div>
+                <div>功能细节</div>
+                <div>转换结果</div>
+                <div>总结与展望</div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="./plugin/seu/background.png">
+            <h1>绪论</h1>
+          </section>
+          <section data-subtitle="课题研究背景和意义" data-auto-animate>
+            <h2>前后端开发</h2>
+          </section>
+          <section data-subtitle="课题研究背景和意义" data-auto-animate>
+            <h2>前后端开发</h2>
+            <h2 style="color: #dd99bb">面向接口开发</h2>
+          </section>
+          <section data-subtitle="研究现状" data-auto-animate>
+            <h2>文本代码</h2>
+            <h2>注解+Jar包导入</h2>
+          </section>
+          <section data-subtitle="研究现状" data-auto-animate>
+            <h2>文本代码</h2>
+            <h2>注解+Jar包导入</h2>
+            <h2 style="color: #dd99bb">Java源代码</h2>
+          </section>
+          <section data-subtitle="本文研究内容" data-auto-animate>
+            <h2>开发中的痛点</h2>
+            <div style="color: #ead7d1">
+              <ul>
+                <li>公司里仍然存在大量在语雀上的源代码</li>
+              </ul>
+            </div>
+          </section>
+          <section data-subtitle="本文研究内容" data-auto-animate>
+            <h2>开发中的痛点</h2>
+            <div style="color: #ead7d1">
+              <ul>
+                <li>公司里仍然存在大量在语雀上的源代码</li>
+                <li>这些源代码没有做到统一管理</li>
+              </ul>
+            </div>
+          </section>
+          <section data-subtitle="本文研究内容" data-auto-animate>
+            <h2>开发中的痛点</h2>
+            <div style="color: #ead7d1">
+              <ul>
+                <li>公司里仍然存在大量在语雀上的源代码</li>
+                <li>这些源代码没有做到统一管理</li>
+                <li>需要接口mock功能供前端调试</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div>Java转TypeScript</div>
+            <div style="color: #dbcdc6">
+              接口管理平台，兼容源代码接口转换，附带mock数据等相关增强。
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="./plugin/seu/background.png">
+            <h1>技术选型介绍</h1>
+          </section>
+          <section data-subtitle="技术系分">
+            <div class="img-list">
+              <div>前端</div>
+              <img src="./plugin/seu/Typescript.svg" alt="TypeScript" />
+              <img src="./plugin/seu/react.png" alt="react" />
+              <img src="./plugin/seu/webpack.svg" alt="webpack" />
+            </div>
+            <div class="img-list">
+              <div>后端</div>
+              <img src="./plugin/seu/Typescript.svg" alt="TypeScript" />
+              <img src="./plugin/seu/nodejs.png" alt="react" />
+              <img src="./plugin/seu/nest.png" alt="nestjs" />
+              <img src="./plugin/seu/mongodb.png" alt="MongoDB" />
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="./plugin/seu/background.png">
+            <h1>页面展示</h1>
+          </section>
+          <section data-subtitle="主页面">
+            <img src="./plugin/seu/mainPage.png" alt="">
+          </section>
+          <section data-subtitle="登录">
+            <img src="./plugin/seu/login.png" alt="">
+          </section>
+          <section data-subtitle="注册">
+            <img src="./plugin/seu/signup.png" alt="">
+          </section>
+          <section data-subtitle="密码重置">
+            <img src="./plugin/seu/reset.png" alt="">
+          </section>
+          <section data-subtitle="创建小组">
+            <img src="./plugin/seu/createGroup.png" alt="">
+          </section>
+          <section data-subtitle="小组页">
+            <img src="./plugin/seu/groupPage.png" alt="">
+          </section>
+          <section data-subtitle="小组详情">
+            <img src="./plugin/seu/groupDetail.png" alt="">
+          </section>
+          <section data-subtitle="文档详情">
+            <img src="./plugin/seu/docDetail.png" alt="">
+          </section>
+        </section>
+        <section>
+          <section data-background-image="./plugin/seu/background.png">
+            <h1>功能细节</h1>
+          </section>
+          <section data-subtitle="安全账号系统" data-auto-animate>
+            <h3>正确的姿势保存密码</h3>
+            <h3 style="color: #999">用正确的姿势传输数据</h3>
+            <h3 style="color: #999">用正确的姿势加密敏感信息</h3>
+            <h3 style="color: #999">用正确的姿势对数据进行备份和监控</h3>
+          </section>
+          <section data-subtitle="安全账号系统" data-auto-animate>
+            <h3>正确的姿势保存密码</h3>
+          </section>
+          <section data-subtitle="安全账号系统" data-auto-animate>
+            <h3>正确的姿势保存密码</h3>
+            <div class="error-text">明文保存密码</div>
+          </section>
+          <section data-subtitle="安全账号系统" data-auto-animate>
+            <h3>正确的姿势保存密码</h3>
+            <div class="error-text">明文保存密码</div>
+            <div class="error-text">md5 加密密码</div>
+          </section>
+          <section data-subtitle="安全账号系统" data-auto-animate>
+            <h3>正确的姿势保存密码</h3>
+            <div class="error-text">明文保存密码</div>
+            <div class="error-text">md5 加密密码</div>
+            <div class="right-text">加盐hash保存密码</div>
+          </section>
+          <section data-subtitle="安全账号系统" data-auto-animate>
+            <div>$$ hash(p,s)=md5(md5(p)+s) $$</div>
+            <div>p明文密码，s盐</div>
+            <div
+              style="
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <div style="margin-right: 20px">hash+salt</div>
+              <svg
+                t="1622872729826"
+                class="icon"
+                viewBox="0 0 1025 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="1195"
+                width="200"
+                height="200"
+              >
+                <path
+                  d="M512.432017 706.601919c-1.183963 0-2.367926 0-3.551889 0-281.015218 0-508.304115-68.253867-508.368113-120.668229l-0.511984-205.849567c0-0.31999 0.127996-0.607981 0.127996-0.863973 46.270554 21.951314 100.636855 32.062998 133.147839 38.110809 101.020843 18.783413 234.456673 29.151089 375.604262 29.151089l3.551889 0c142.043561-0.159995 276.247367-10.783663 378.004187-29.887066 32.542983-6.111809 86.71729-16.287491 133.019843-38.110809 0 0.095997 0 0.287991 0 0.287991l0.543983 205.849567C1024.064028 637.260086 795.111183 706.217931 512.432017 706.601919zM512.432017 384.499984c-1.183963 0-2.367926 0-3.551889 0-281.015218 0-508.304115-62.270054-508.368113-114.684416l-0.511984-173.882566C-0.095967 43.326646 228.984874 0.351989 511.664041 0c1.247961 0 2.431924 0 3.679885 0 280.919221 0 508.048123 42.23868 508.112121 94.653042l0.543983 173.882566C1024.064028 321.141964 795.111183 384.115996 512.432017 384.499984zM508.848129 768.615981l3.551889 0c142.043561-0.191994 276.279366-16.767476 378.004187-35.870879 32.542983-6.111809 86.71729-16.287491 133.051842-38.142808l0.511984 233.464704c0.063998 52.638355-228.888847 95.581013-511.568013 95.933002-1.215962 0-2.367926 0-3.615887 0-280.95122 0-508.240117-42.23868-508.304115-94.621043L3.0e-05 695.306272c46.270554 21.983313 100.668854 32.094997 133.243836 38.142808C234.264709 752.264492 367.668541 768.615981 508.848129 768.615981z"
+                  p-id="1196"
+                  fill="#707070"
+                ></path>
+              </svg>
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div>JSON Web Token</div>
+            <div style="color: #666666"></div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div>JSON Web Token</div>
+            <div style="color: #666666">http 无状态</div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div>JSON Web Token</div>
+            <div style="color: #666666">http 无状态</div>
+            <div style="color: #666666">用户认证</div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img src="./plugin/seu/session1.svg" alt="" />
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img src="./plugin/seu/session1.svg" alt="" />
+              <img src="./plugin/seu/session2.svg" alt="" width="375px" />
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img src="./plugin/seu/session1.svg" alt="" />
+              <img src="./plugin/seu/session2.svg" alt="" width="375px" />
+              <img src="./plugin/seu/session3.svg" alt="" width="375px" />
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img src="./plugin/seu/session1.svg" alt="" />
+              <img src="./plugin/seu/session2.svg" alt="" width="375px" />
+              <img src="./plugin/seu/session3.svg" alt="" width="375px" />
+              <div class="error-text">用户会话的数据维护在数据库</div>
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div>JWT中包含用户信息</div>
+              <img src="./plugin/seu/jwt1.svg" alt="" />
+              <img src="./plugin/seu/jwt2.svg" alt="" width="375px" />
+              <img src="./plugin/seu/jwt3.svg" alt="" width="375px" />
+              <div class="error-text">用户会话的数据维护在客户端</div>
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+              "
+            >
+              <div>
+                JWT
+                <span style="margin-left: 50px; color: #ff6600">Header</span>
+              </div>
+              <div style="color: #ff6600">
+                eyJhbGci0iJIUzI1NiIsInR5cC16IkpXVcJ9.
+              </div>
+              <div>MetaData: Signature Algorithm, token Type</div>
+              <pre><code>{
+  "alg": "HS256",
+  "typ": "JWT"
+} </code></pre>
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+              "
+            >
+              <div>
+                JWT
+                <span style="margin-left: 50px; color: #ff6600">Header</span
+                >.<span style="color: #cc00ff">Payload</span>
+              </div>
+              <div style="color: #ff6600">
+                eyJhbGci0iJIUzI1NiIsInR5cC16IkpXVcJ9.
+              </div>
+              <div style="color: #cc00ff">
+                eyJzdWIi0iIxMjMNTY30DkwIiwibmFtZSI6IkpvaG4
+              </div>
+              <div style="color: #cc00ff">gRG91IiwiaXNTb2NpYWwiOnRydwV9.</div>
+              <div>用来存放实际需要传递的数据</div>
+              <pre><code>{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "admin": true
+}</code></pre>
+            </div>
+          </section>
+          <section data-subtitle="用户会话保持" data-auto-animate>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+              "
+            >
+              <div>
+                JWT
+                <span style="margin-left: 50px; color: #ff6600">Header</span
+                >.<span style="color: #cc00ff">Payload</span>.<span
+                  style="color: #00ccff"
+                  >Signature</span
+                >
+              </div>
+              <div style="color: #ff6600">
+                eyJhbGci0iJIUzI1NiIsInR5cC16IkpXVcJ9.
+              </div>
+              <div style="color: #cc00ff">
+                eyJzdWIi0iIxMjMNTY30DkwIiwibmFtZSI6IkpvaG4
+              </div>
+              <div style="color: #cc00ff">gRG91IiwiaXNTb2NpYWwiOnRydwV9.</div>
+              <div style="color: #00ccff">
+                4pcPyMDe9o1PSyXnrXCjTwXyr4BsezdI1AVTmud2fU4
+              </div>
+              <div>签名防止两部分的数据被篡改</div>
+              <div style="font-size: 0.5em">
+                $$ HMACSHA256( base64UrlEncode(header) + "." +
+                base64UrlEncode(payload), secret) $$
+              </div>
+            </div>
+          </section>
+          <section data-subtitle="语法转换">
+            <div>
+              <span style="color: #cc9933">Java接口</span> 转
+              <span style="color: #006699">TypeScript接口</span>
+            </div>
+          </section>
+          <section data-subtitle="语法转换">
+            <div>
+              <span style="color: #cc9933">Java接口</span>
+              <pre><code><script type="text/template">
+@Service 
+public interface MerchantService{
+    /**
+     * @parma ids
+     * @comment fnA服务
+     */
+    PageResult<QueryResult> fnA(List<Long> ids,Query query ) throws ServiceException;
+    /**
+     * @parma ids
+     * @comment fnB服务
+     */
+    Boolean fnB(List<Long> ids) throws ServiceException;
+    /**
+     * @parma 
+     * @comment fnC服务
+     */
+    List<String> fnC() throws ServiceException;
+}
+
+@Entity
+public class Query {
+    /**
+     * @comment applyId
+     */
+    private Long applyId;
+    /**
+     * @comment shopId
+     */
+    private Long shopId;
+    /**
+     * @comment applyNo
+     */
+    private Long applyNo;
+}
+
+@Entity
+public class QueryResult {
+    /**
+     * @comment merchantName
+     */
+    private Long merchantName;
+}
+
+@Entity
+public class PageResult<T> {
+    /**
+     * @comment Result
+     */
+    private List<T> result;
+}
+</script></code></pre>
+            </div>
+          </section>
+          <section data-subtitle="语法转换">
+            <div>
+              <span style="color: #cc9933">TypeScript接口</span>
+              <pre><code><script type="text/template">
+// @Service
+interface MerchantService {
+    /**
+   * @parma:ids
+   * @comment:fnA服务
+   */
+  fnA: (ids: Array<number>, query: Query) => PageResult<QueryResult>;
+  /**
+   * @parma:ids
+   * @comment:fnB服务
+   */
+  fnB: (ids: Array<number>) => boolean;
+  /**
+   * @parma:
+   * @comment:fnC服务
+   */
+  fnC: () => Array<string>;
+}
+// @Entity
+interface Query {
+  /**
+   * @comment:applyId
+   */
+  applyId: number;
+  /**
+   * @comment:shopId
+   */
+  shopId: number;
+  /**
+   * @comment:applyNo
+   */
+  applyNo: number;
+}
+interface QueryResult {
+  /**
+   * @comment:merchantName
+   */
+  merchantName: number;
+}
+interface PageResult<T> {
+  /**
+   * @comment:Result
+   */
+  result: Array<T>;
+}
+</script></code></pre>
+            </div>
+          </section>
+          <section data-subtitle="语法转换">
+            <img src="./plugin/seu/transpiler.png" alt="" />
+            <div style="color: #999">
+              <span class="right-text">词法分析</span>
+              ->语法分析->语法转换->语法生成
+            </div>
+          </section>
+          <section data-subtitle="语法转换-词法分析">
+            <img src="./plugin/seu/tokenizer.png" alt="" height="500px" />
+          </section>
+          <section data-subtitle="" data-auto-animate style="left:-100px">
+            <div style="display: flex">
+              <div style="display: flex; flex-direction: column">
+                <div>
+                  source
+                  <pre><code data-line-numbers="1"><script type='text/template'>@Service 
+public interface MerchantService{
+                  </script></code></pre>
+                </div>
+                <div>
+                  tokenizer
+                  <pre><code data-line-numbers="22-28"><script type='text/template'>export function tokenizer(input: string) {
+  let current = 0;
+  let tokens: Token[] = [];
+  while (current < input.length) {
+    let char = input[current];
+    // 单字符
+    if (TokensTable.get('curlyBrackets').test(char)) {
+      tokens.push({ type: 'curlyBrackets', value: char });
+      current++;
+      continue;
+    }
+    // 展示省略........
+    // 多字符
+    // 展示省略........
+    if (TokensTable.get('comment').test(char)) {
+      char = input[++current];
+      while (!/[\/]/.test(char)) {
+        if (/[\*]/.test(char)) {
+          char = input[++current];
+          continue;
+        }
+        if (TokensTable.get('annotation').test(char)) {
+          let value = '@';
+          char = input[++current];
+          while (LETTERS.test(char)) {
+            value += char;
+            char = input[++current];
+          }
+          while (TokensTable.get('whiteSpace').test(char)) {
+            char = input[++current];
+          }
+          value += ':';
+          while (/\w/.test(char) || /[\u4e00-\u9fa5]/.test(char)) {
+            value += char;
+            char = input[++current];
+          }
+          tokens.push({ type: 'comment', value });
+        }
+        while (TokensTable.get('whiteSpace').test(char)) {
+          char = input[++current];
+        }
+      }
+      current++;
+      continue;
+    }
+    if (LETTERS.test(char)) {
+      let value = '';
+      while (LETTERS.test(char)) {
+        value += char;
+        char = input[++current];
+      }
+      tokens.push({ type: 'name', value });
+      continue;
+    }
+    throw new TypeError(`I dont know what this character is: ${char}`);
+  }
+  return tokens;
+}
+  
+                  </script></code></pre>
+                </div>
+              </div>
+              <div>
+                <div>tokens</div>
+                <div>
+                  <pre><code><script type='text/template'>[
+  { type: 'annotation', value: '@Service' }, 
+  ]
+                </script></code></pre>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section data-auto-animate  style="left:-100px">
+            <div style="display: flex">
+              <div style="display: flex; flex-direction: column">
+                <div>
+                  source
+                  <pre><code data-line-numbers="2"><script type='text/template'>@Service 
+public interface MerchantService{
+                  </script></code></pre>
+                </div>
+                <div>
+                  tokenizer
+                  <pre><code data-line-numbers="46-54"><script type='text/template'>export function tokenizer(input: string) {
+  let current = 0;
+  let tokens: Token[] = [];
+  while (current < input.length) {
+    let char = input[current];
+    // 单字符
+    if (TokensTable.get('curlyBrackets').test(char)) {
+      tokens.push({ type: 'curlyBrackets', value: char });
+      current++;
+      continue;
+    }
+    // 展示省略........
+    // 多字符
+    // 展示省略........
+    if (TokensTable.get('comment').test(char)) {
+      char = input[++current];
+      while (!/[\/]/.test(char)) {
+        if (/[\*]/.test(char)) {
+          char = input[++current];
+          continue;
+        }
+        if (TokensTable.get('annotation').test(char)) {
+          let value = '@';
+          char = input[++current];
+          while (LETTERS.test(char)) {
+            value += char;
+            char = input[++current];
+          }
+          while (TokensTable.get('whiteSpace').test(char)) {
+            char = input[++current];
+          }
+          value += ':';
+          while (/\w/.test(char) || /[\u4e00-\u9fa5]/.test(char)) {
+            value += char;
+            char = input[++current];
+          }
+          tokens.push({ type: 'comment', value });
+        }
+        while (TokensTable.get('whiteSpace').test(char)) {
+          char = input[++current];
+        }
+      }
+      current++;
+      continue;
+    }
+    if (LETTERS.test(char)) {
+      let value = '';
+      while (LETTERS.test(char)) {
+        value += char;
+        char = input[++current];
+      }
+      tokens.push({ type: 'name', value });
+      continue;
+    }
+    throw new TypeError(`I dont know what this character is: ${char}`);
+  }
+  return tokens;
+}
+  
+                  </script></code></pre>
+                </div>
+              </div>
+              <div>
+                <div>tokens</div>
+                <div>
+                  <pre><code><script type='text/template'>[  
+  { type: 'annotation', value: '@Service' }, 
+  { type: 'name', value: 'public' },
+  ]
+                </script></code></pre>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section data-subtitle="语法转换">
+            <h2>tokens</h2>
+            <pre>
+              <code>
+                <script type="text/template">[
+  { type: 'annotation', value: '@Service' }, 
+  { type: 'name', value: 'public' },
+  { type: 'name', value: 'interface' },      
+  { type: 'name', value: 'MerchantService' },
+  { type: 'curlyBrackets', value: '{' },     
+  { type: 'comment', value: '@parma:ids' },  
+  { type: 'comment', value: '@comment:fnA服务' },
+  { type: 'name', value: 'PageResult' },
+  { type: 'angleBrackets', value: '<' },
+  ......
+]               </script>
+              </code>
+            </pre>
+          </section>
+          <section data-subtitle="语法转换">
+            <img src="./plugin/seu/transpiler.png" alt="" />
+            <div style="color: #999">
+              词法分析 ->
+              <span class="right-text">语法分析</span>->语法转换->语法生成
+            </div>
+          </section>
+          <section data-subtitle="语法转换">
+            <div>目标树</div>
+            <img src="./plugin/seu/astTree.png" alt="" />
+          </section>
+          <section data-subtitle="语法转换">
+            <div>语法分析状态机</div>
+            <img src="./plugin/seu/astParser.png" alt="" />
+          </section>
+          <section data-auto-animate style="left:-100px">
+            <div style="display: flex"  >
+              <div>
+                parser
+                <pre><code data-line-numbers="42-44|15|18-20"><script type='text/template'>
+                    export function parser(tokens: Token[]) {
+  let current = 0;
+  const ast: AST = {
+    type: 'Program',
+    services: [],
+    entities: [],
+  };
+  function paramWalk() {
+  }
+  function templateParamWalk() {
+  }
+  function methodWalk() {
+  }
+  function serviceWalk() {
+    let token = tokens[current];
+    if (token.type === 'annotation') {
+      const serviceKeyWord = tokens[++current];
+      const serviceType = tokens[++current];
+      const serviceName = tokens[++current];
+      const node: ServiceNode = {
+        type: typeName2ASTType.get(serviceType.value) as any,
+        open: serviceKeyWord.value,
+        name: serviceName.value,
+        body: [],
+      };
+      token = tokens[++current];
+      if (token.type === 'curlyBrackets' && token.value === '{') {
+        token = tokens[++current];
+       ......
+    }
+    throw new Error(`serviceWalk: ${token.type}`);
+  }
+  function attributeWalk() {
+  }
+  while (current < tokens.length) {
+    const token = tokens[current];
+    if (token.type === 'sequenceEOF') {
+      current++;
+      continue;
+    }
+    if (token.type === 'annotation' && token.value === '@Service') {
+      ast.services.push(serviceWalk());
+    }
+    if (token.type === 'annotation' && token.value === '@Entity') {
+      ast.entities.push(entityWalk());
+    }
+  }
+  return ast;
+}
+                  </script></code></pre>
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <div>
+                  input tokens
+                  <pre><code data-line-numbers="2|3|4|5"><script type='text/template'>[
+  { type: 'annotation', value: '@Service' }, 
+  { type: 'name', value: 'public' },
+  { type: 'name', value: 'interface' },      
+  { type: 'name', value: 'MerchantService' },
+  { type: 'curlyBrackets', value: '{' },     
+  { type: 'comment', value: '@parma:ids' },  
+  { type: 'comment', value: '@comment:fnA服务' },
+  { type: 'name', value: 'PageResult' },
+  { type: 'angleBrackets', value: '<' },
+  ......
+]  
+                  </script></code></pre>
+                </div>
+                <div>
+                  <div>AST</div>
+                  <div>
+                    <pre><code><script type='text/template'>
+{
+  type: 'Program',
+  services: [],
+  entities: [],
+}</script></code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section data-auto-animate style="left:-100px">
+            <div style="display: flex">
+              <div>
+                parser
+                <pre><code data-line-numbers="21-26|28"><script type='text/template'>
+                    export function parser(tokens: Token[]) {
+  let current = 0;
+  const ast: AST = {
+    type: 'Program',
+    services: [],
+    entities: [],
+  };
+  function paramWalk() {
+  }
+  function templateParamWalk() {
+  }
+  function methodWalk() {
+  }
+  function serviceWalk() {
+    let token = tokens[current];
+    if (token.type === 'annotation') {
+      const serviceKeyWord = tokens[++current];
+      const serviceType = tokens[++current];
+      const serviceName = tokens[++current];
+      const node: ServiceNode = {
+        type: typeName2ASTType.get(serviceType.value) as any,
+        open: serviceKeyWord.value,
+        name: serviceName.value,
+        body: [],
+      };
+      token = tokens[++current];
+      if (token.type === 'curlyBrackets' && token.value === '{') {
+        token = tokens[++current];
+       ......
+    }
+    throw new Error(`serviceWalk: ${token.type}`);
+  }
+  function attributeWalk() {
+  }
+  while (current < tokens.length) {
+    const token = tokens[current];
+    if (token.type === 'sequenceEOF') {
+      current++;
+      continue;
+    }
+    if (token.type === 'annotation' && token.value === '@Service') {
+      ast.services.push(serviceWalk());
+    }
+    if (token.type === 'annotation' && token.value === '@Entity') {
+      ast.entities.push(entityWalk());
+    }
+  }
+  return ast;
+}
+                  </script></code></pre>
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <div>
+                  input tokens
+                  <pre><code data-line-numbers="5|6"><script type='text/template'>[
+  { type: 'annotation', value: '@Service' }, 
+  { type: 'name', value: 'public' },
+  { type: 'name', value: 'interface' },      
+  { type: 'name', value: 'MerchantService' },
+  { type: 'curlyBrackets', value: '{' },     
+  { type: 'comment', value: '@parma:ids' },  
+  { type: 'comment', value: '@comment:fnA服务' },
+  { type: 'name', value: 'PageResult' },
+  { type: 'angleBrackets', value: '<' },
+  ......
+]  
+                  </script></code></pre>
+                </div>
+                <div>
+                  <div>AST</div>
+                  <div>
+                    <pre><code><script type='text/template'>
+{
+  type: 'Program',
+  services: [],
+  entities: [],
+}</script></code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section data-subtitle="语法转换">
+            <pre><code data-line-numbers="2|5-8|9|10-13|14|15-28|29-33|34-35|38|40-44|45-50"><script type="text/template">{
+  type: 'Program',
+  services: [
+    {
+      type: 'Service',
+      open: 'public',
+      name: 'MerchantService',
+      body: [{
+        type: 'Method',
+        comment: [
+          { type: 'Comment', value: '@parma:ids' },
+          { type: 'Comment', value: '@comment:fnA服务' }
+        ],
+        name: 'fnA',
+        params: [
+          {
+            type: 'ListIdentifier',
+            typeName: 'List',
+            identifyName: 'ids',
+            generic: [Array]
+          },
+          {
+            type: 'ObjectIdentifier',
+            typeName: 'Query',
+            identifyName: 'query',
+            generic: []
+          }
+        ],
+        return: {
+          type: 'ObjectIdentifier',
+          typeName: 'PageResult',
+          generic: [ [Object] ]
+        },
+        throws: [ { type: 'Exception', typeName: 'ServiceException', generic: [] } ]
+    }]
+    }
+  ],
+  entities: [
+    {
+      type: 'Entity',
+      open: 'public',
+      name: 'Query',
+      generic: [],
+      body: [{
+        type: 'NumberIdentifier',
+        comment: [ { type: 'Comment', value: '@comment:applyId' } ],
+        open: 'private',
+        generic: [],
+        typeName: 'Long',
+        identifyName: 'applyId'
+}]
+    },
+   .....
+  ]
+}</script></code></pre>
+          </section>
+          <section data-subtitle="语法转换">
+            <img src="./plugin/seu/transpiler.png" alt="" />
+            <div style="color: #999">
+              词法分析 ->语法分析-><span class="right-text">语法转换</span
+              >->语法生成
+            </div>
+            <div>主要针对Java到TypeScript的一些语法上的兼容</div>
+          </section>
+          <section data-subtitle="语法转换">
+            <img src="./plugin/seu/transpiler.png" alt="" />
+            <div style="color: #999">
+              词法分析 ->语法分析->语法转换-><span class="right-text"
+                >语法生成</span
+              >
+            </div>
+          </section>
+          <section data-subtitle="" style="left:-300px">
+            <div style="display: flex">
+              <div>
+                parser
+                <pre><code data-line-numbers="3-7|8-11|21-25" ><script type="text/template" >export function codeGenerator(node: CommonNode) {
+  switch (node.type) {
+    case 'Program':
+      return `// @Service
+${node.services.map(codeGenerator).join('\n')}
+// @Entity
+${node.entities.map(codeGenerator).join('\n')}`;
+    case 'Service':
+      return `interface ${node.name} {
+  ${node.body.map(codeGenerator).join('\n')}
+}`;
+    case 'Entity':
+      return `interface ${GenericalClassObjectType(node)} {
+${node.body
+  .map((attribute) => {
+    return `${generatorComment(attribute.comment)}
+  ${codeGenerator(attribute)}`;
+  })
+  .join(';\n')};
+}`;
+    case 'Method':
+      return `${generatorComment(node.comment)}
+  ${node.name}: (${node.params
+        .map(codeGenerator)
+        .join(', ')}) => ${codeGenerator(node.return)};`;
+    case 'Comment':
+      return node.value;
+    case 'NumberIdentifier':
+    case 'StringIdentifier':
+    case 'BooleanIdentifier':
+      return node.identifyName
+        ? `${node.identifyName}: ${JavaType2TStype.get(
+            node.typeName as JAVAKeyWord,
+          )}`
+        : `${JavaType2TStype.get(node.typeName as JAVAKeyWord)}`;
+    case 'ListIdentifier':
+      return node.identifyName
+        ? `${node.identifyName}: ${GenericalArrayType(node)}`
+        : GenericalArrayType(node);
+    case 'ObjectIdentifier':
+      return node.identifyName
+        ? `${node.identifyName}: ${GenericalObjectType(node)}`
+        : `${GenericalObjectType(node)}`;
+    default:
+      throw new TypeError(`Generator: ${node.type}`);
+  }
+}
+            </script></code></pre>
+              </div>
+              <div>
+                <div style="display: flex; flex-direction: column">
+                  <div>
+                    ast tree
+                    <pre><code data-line-numbers="2|4-8|9"><script type="text/template">{
+  type: 'Program',
+  services: [
+    {
+      type: 'Service',
+      open: 'public',
+      name: 'MerchantService',
+      body: [{
+        type: 'Method',
+        comment: [
+          { type: 'Comment', value: '@parma:ids' },
+          { type: 'Comment', value: '@comment:fnA服务' }
+        ],
+        name: 'fnA',
+        params: [
+          {
+            type: 'ListIdentifier',
+            typeName: 'List',
+            identifyName: 'ids',
+            generic: [Array]
+          },
+          {
+            type: 'ObjectIdentifier',
+            typeName: 'Query',
+            identifyName: 'query',
+            generic: []
+          }
+        ],
+        return: {
+          type: 'ObjectIdentifier',
+          typeName: 'PageResult',
+          generic: [ [Object] ]
+        },
+        throws: [ { type: 'Exception', typeName: 'ServiceException', generic: [] } ]
+    }]
+    }
+  ],
+  entities: [
+    {
+      type: 'Entity',
+      open: 'public',
+      name: 'Query',
+      generic: [],
+      body: [{
+        type: 'NumberIdentifier',
+        comment: [ { type: 'Comment', value: '@comment:applyId' } ],
+        open: 'private',
+        generic: [],
+        typeName: 'Long',
+        identifyName: 'applyId'
+}]
+    },
+   .....
+  ]
+}
+                    </script></code></pre>
+                  </div>
+                  <div>
+                    TypeScript output
+                    <pre><code data-line-numbers="1|2|3-7"><script type="text/template">@Service
+interface MerchantService {
+    /**
+   * @parma:ids
+   * @comment:fnA服务
+   */
+  fnA: (ids: Array<number>, query: Query) => PageResult<QueryResult>;
+}
+@Entity
+....
+                    </script>
+                    </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section data-subtitle="数据Mock">返回JSON,模拟真实请求数据</section>
+          <section data-subtitle="数据Mock">
+            模拟要基本符合业务数据的规格
+          </section>
+          <section data-subtitle="数据mock">
+            <img src="./plugin/seu/transpiler.png" alt="" />
+            <div style="color: #999">
+              词法分析 ->语法分析-><span class="right-text">语法转换</span
+              >->语法生成
+            </div>
+            <div style="color: #cc3366">
+              由于语法分析生成了语法树，通过提供业务属性标注，在语法转换这一步产生新的语法树，每一个Param节点带上业务属性，通过业务属性的预设进行数据mock
+            </div>
+          </section>
+          <section data-subtitle="数据mock">
+            <pre><code data-line-numbers="4,8,12"><script type="text/template">@Entity
+public class User {
+    /**
+     * @cname
+     */
+    private Long name;
+    /**
+     * @phone
+     */
+    private Long phone;
+    /**
+     * @id
+     */
+    private Long idCard;
+}
+</script></code></pre>
+            <pre><code data-line-numbers="3-5"><script type="text/template">{
+  user: {
+    name: "黄亮",
+    phone: 13991021232,
+    idCard: 445101192005188151,
+  }
+}
+</script></code></pre>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="./plugin/seu/background.png">
+            <h1>转换结果</h1>
+          </section>
+          <section data-subtitle="转换结果"  style="left:-300px">
+            <div style="display: flex">
+              <pre><code data-line-numbers="1|2|3-6|7"><script type="text/template">@Service 
+public interface MerchantService{
+    /**
+     * @parma ids
+     * @comment fnA服务
+     */
+    PageResult<QueryResult> fnA(List<Long> ids,Query query ) throws ServiceException;
+    /**
+     * @parma ids
+     * @comment fnB服务
+     */
+    Boolean fnB(List<Long> ids) throws ServiceException;
+    /**
+     * @parma 
+     * @comment fnC服务
+     */
+    List<String> fnC() throws ServiceException;
+}
+@Entity
+public class Query {
+    /**
+     * @comment applyId
+     */
+    private Long applyId;
+    /**
+     * @comment shopId
+     */
+    private Long shopId;
+    /**
+     * @comment applyNo
+     */
+    private Long applyNo;
+}
+
+@Entity
+public class QueryResult {
+    /**
+     * @comment merchantName
+     */
+    private Long merchantName;
+}
+
+@Entity
+public class PageResult<T> {
+    /**
+     * @comment Result
+     */
+    private List<T> result;
+}</script></code></pre>
+                <pre><code data-line-numbers="1|2|3-6|7">// @Service
+interface MerchantService {
+    /**
+   * @parma:ids
+   * @comment:fnA服务
+   */
+  fnA: (ids: Array<number>, query: Query) => PageResult<QueryResult>;
+  /**
+   * @parma:ids
+   * @comment:fnB服务
+   */
+  fnB: (ids: Array<number>) => boolean;
+  /**
+   * @parma:
+   * @comment:fnC服务
+   */
+  fnC: () => Array<string>;
+}
+// @Entity
+interface Query {
+  /**
+   * @comment:applyId
+   */
+  applyId: number;
+  /**
+   * @comment:shopId
+   */
+  shopId: number;
+  /**
+   * @comment:applyNo
+   */
+  applyNo: number;
+}
+interface QueryResult {
+  /**
+   * @comment:merchantName
+   */
+  merchantName: number;
+}
+interface PageResult<T> {
+  /**
+   * @comment:Result
+   */
+  result: Array<T>;
+}
+                </code></pre>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section  data-background-image="./plugin/seu/background.png"><h1>总结与展望</h1></section>
+          <section data-subtitle="总结与展望">
+            <div  style="display: flex; align-items: flex-start; flex-direction: column;">
+                      <div>         
+              <ul style="color: #99CC99">
+                <li>
+                  提供了一种方案去管理公司里遗留存在于语雀文档的源代码接口
+                </li>
+                <li>
+                  涉及前端、服务端和简单编译原理
+                </li>
+            </ul>
+          </div>
+          <div>
+          <ul style="color:#9933FF">
+            <li>
+              灵活性差、需要插件化处理
+            </li>
+            <li>
+              接入到项目管理平台
+            </li>
+          </ul>
+          </div>
+            </div>
+          </section>
+        </section>
+  
+        <section data-background-image="./plugin/seu/background.png">
+          <h1>谢谢各位评委</h1>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        math: {
+          mathjax:
+            'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: { Macros: { RR: '{\\bf R}' } },
+        },
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+      });
+      Reveal.on('slidechanged', (event) => {
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        document.getElementById('sub-title').innerHTML =
+          event.currentSlide.dataset.subtitle ?? ' ';
+      });
+    </script>
+  </body>
+</html>

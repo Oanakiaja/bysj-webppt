@@ -1,0 +1,45 @@
+.main-seu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.main-seu>img {
+  height: 100px;
+  width: 100px;
+}
+
+#sub-title {
+  display: inline-block;
+  font-size: 1em;
+  min-width: 100px;
+}
+
+.img-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.img-list>img {
+  height: 100px;
+  margin-left: 20px;
+}
+
+.ui-list>img {
+  height: 400px;
+}
+
+.error-text {
+  color: #999999;
+}
+
+.right-text {
+  color: #111111;
+}
